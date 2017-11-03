@@ -2,9 +2,9 @@
 Title Collecting Information
 color 2
 cls
+if exist log.txt then del log.txt
 set LogFile="log.txt"
-if exists log.txt then del log.txt
-
+echo.Begin>%LogFile%
 net use x: \\192.168.1.12\C$
 psexec \\192.168.1.12 /c TS_VM.bat %LogFile%
 copy x:\Information.txt %~dp0
@@ -68,7 +68,7 @@ copy /b %LogFile%+Information.txt %LogFile%
 del x:\Information.txt
 net use x: /delete /y
 
-del Information.txt
+REM del Information.txt
 
 Title Finished!
 pause
