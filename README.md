@@ -1,4 +1,4 @@
-Information Collection Tool Version 2.0.0.0
+TimeSync Tool Version 2.0.0.0
 
 ---------------------------------------------------------------------
 
@@ -8,7 +8,7 @@ Requirements:
 	
 ---------------------------------------------------------------------
 Purpose:
-	This tool is used to quickly gather PC information of all VMs.
+	This tool is used to quickly Synchronize the Time/Date of all VMs.
 
 	This tool gathers the following information:
 	Computer Name | Image Version | Windows Activations | Date | Time
