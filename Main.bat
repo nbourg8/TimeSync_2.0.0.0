@@ -2,7 +2,7 @@
 Title Collecting Information
 color 2
 cls
-if exist log.txt then del log.txt
+if exist log.txt del log.txt
 set LogFile="log.txt"
 echo.Begin>%LogFile%
 net use x: \\192.168.1.12\C$
