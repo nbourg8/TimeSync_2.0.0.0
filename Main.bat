@@ -7,7 +7,7 @@ cls
 if exist log.txt del log.txt
 set LogFile="log.txt"
 
-echo.Begin>%LogFile%
+echo. >%LogFile%
 
 net use x: \\192.168.1.12\C$
 psexec \\192.168.1.12 /c TS_VM.bat %LogFile%
