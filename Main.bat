@@ -52,14 +52,14 @@ del x:\Information.txt
 net use x: /delete /y
 
 net use x: \\192.168.1.180\C$
-psexec \\192.168.1.180 /c TM_HMI.bat %LogFile%
+psexec \\192.168.1.180 /c TS_HMI.bat %LogFile%
 copy x:\Information.txt %~dp0
 copy /b %LogFile%+Information.txt %LogFile%
 del x:\Information.txt
 net use x: /delete /y
 
 net use x: \\192.168.1.181\C$
-psexec \\192.168.1.181 /c TM_HMI.bat %LogFile%
+psexec \\192.168.1.181 /c TS_HMI.bat %LogFile%
 copy x:\Information.txt %~dp0
 copy /b %LogFile%+Information.txt %LogFile%
 del x:\Information.txt
