@@ -75,4 +75,5 @@ net use x: /delete /y
 del Information.txt
 
 Title Finished!
+call log.txt
 pause
